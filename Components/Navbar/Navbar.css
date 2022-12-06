@@ -1,0 +1,46 @@
+.navbar {
+    background-color: #ECF1F7;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+.Nav-btn{
+    border-radius: 50px;
+    color: #0071C3;
+    font-weight: 700;
+    padding: 0px 50px;
+    border: 1px solid #0071C3;
+    background-color: #0071C30D;
+    
+}
+.Navbar-p{
+    position:relative;
+}
+
+.Navbar-p::after{
+    content:"";
+    border: 1px solid blue;
+    position: absolute;
+   width: 30px;
+   height: 2px;
+   top: 10px;
+   right: -40px;
+  
+}
+.Navbar-p::before{
+    content:"";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #0071C3;
+    position: absolute;
+    right: -40px;
+    bottom: 11px;
+
+}

@@ -1,0 +1,129 @@
+.FAQ-container {
+    background-color: #ECF1F7;
+}
+.ProductStatus{
+    max-width: fit-content;
+    margin: auto;
+    color: #0071C3;
+    font-weight: 700;
+    background-color:#D4E4F2;
+    border: 2px solid blue;
+    border-radius: 10px;
+    border-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px;
+    position: relative;
+}
+/* .ProductStatus::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+
+} */
+.progress{
+    position: absolute;
+    width: 97%;
+    top: 37px;
+    z-index: -1;
+}
+.ProductStatusBar{
+    background-color: white;
+    border: 2px solid #0071C3;
+    border-radius: 10px;
+    position: relative;
+   z-index: 2;
+    
+}
+.StatusBar{
+    justify-content: space-around;
+   
+}
+.accordion-button:not(.collapsed){
+    background-color: white;
+    color: black;
+}
+#FAQ-h3 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.FAQ-col-1 {
+    position: relative;
+}
+
+.FAQ-col-1::after {
+    content: "";
+    background-image: url("./../Image/FAQLine.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -50px;
+    top: 0px;
+    height: 100%;
+    width: 40px;
+
+}
+
+.accordion-item {
+    border-radius: 10px;
+}
+
+.accordion-button {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+
+
+.accordion-body {
+    text-align: start;
+    color: gray;
+    font-weight: 500;
+}
+
+#FAQ-h1 {
+    font-weight: 700;
+}
+
+.FAQ-btn-div{
+  color: white;
+  background-color: #131E2A;
+  border-radius: 50px;
+  font-size: 18px;
+  width: fit-content;
+  margin: auto;
+}
+.FAQ-btn-p{
+    position: relative;
+    padding: 0px 50px;
+}
+.FAQ-btn-p::after{
+    content:"";
+    border: 1px solid white;
+    position: absolute;
+   width: 30px;
+   height: 2px;
+   right: 10px;
+   top: 11px;
+}
+.FAQ-btn-p::before{
+    content:"";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+   right: 5px;
+   top: 9px;
+}
+@media(max-width:575px){
+    .FAQ-col-1::after {
+        height: 0;
+        width: 0;
+    }
+}

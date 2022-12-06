@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: gray;
+    font-weight: 600;
+}
+
+#footer-h3 {
+    font-weight: 700;
+}
+
+.Footer-container {
+    background-color: #ECF1F7;
+}
+
+@media(max-width:820px) {
+    ul {
+        justify-content: center;
+    }
+}
+
+@media(max-width:575px) {
+    ul {
+        flex-wrap: wrap;
+    }
+}

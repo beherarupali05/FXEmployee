@@ -1,0 +1,152 @@
+.Intro-container {
+    position: relative;
+}
+
+.Intro-container::before {
+    content: "";
+    background-color: #ECF1F7;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+}
+
+.Intro-container::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    bottom: 290px;
+    z-index: -1;
+}
+
+#Intro-h3 {
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+#Intro-h4 {
+    color: gray;
+}
+
+.Intro-heading {
+    position: relative;
+}
+
+.Intro-heading::after {
+    content: "";
+    border: 1px solid #0071C3;
+    position: absolute;
+    height: 50px;
+    bottom: -40px;
+
+}
+
+.Intro-heading::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0071C3;
+    position: absolute;
+    bottom: -40px;
+    right: 606px;
+}
+
+.Intro-btn-1 {
+    background: linear-gradient(to right, #33A9FF, #35DF90);
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+
+}
+
+.Intro-btn-2 {
+    background: linear-gradient(to right, #FAC661, #F47961);
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+
+}
+
+.card-1 {
+    text-align: start;
+}
+
+#card-1 {
+    background-color: #E1FAEE;
+
+}
+
+#card-2 {
+    background-color: #FDEBE7;
+    text-align: start;
+}
+
+ol {
+    font-size: 20px;
+    font-weight: 600;
+    list-style-type: circle;
+    text-align: start;
+}
+
+.card {
+    border-radius: 20px;
+    border-style: none;
+}
+
+@media(max-width:820px) {
+    .card-1 {
+        text-align: center;
+    }
+
+    #card-2 {
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .card-text {
+        text-align: center;
+    }
+
+    .Intro-btn-2 {
+        margin-left: 80px;
+
+    }
+
+    .Intro-container::after {
+        bottom: 400px;
+    }
+
+    .Intro-heading::after {
+        top: 20px;
+    }
+
+    .Intro-heading::before {
+        top: 70px;
+        right: 306px;
+    }
+}
+
+@media(max-width:575px) {
+    .Intro-container::after {
+        bottom: 550px;
+    }
+
+    .Intro-heading::before {
+        top: 70px;
+        right: 153px;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+}
